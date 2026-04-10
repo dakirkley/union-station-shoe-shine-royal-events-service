@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Engagement Booster Blueprint - Union Station Shoe Shine</title>
+    <meta name="description" content="Get our Event Engagement Booster Blueprint and discover why Fortune 500 planners book our luxury shoe-shine activations to increase booth traffic by 2-3x.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero .subheadline {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Video Section */
+        .video-section {
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .video-placeholder {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border: 2px solid #D4AF37;
+            border-radius: 10px;
+            padding: 120px 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .video-placeholder::before {
+            content: "▶";
+            font-size: 80px;
+            color: #D4AF37;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .video-placeholder p {
+            font-size: 1.2rem;
+            color: #888;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 60px 0;
+            background: rgba(212, 175, 55, 0.05);
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .benefits h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #D4AF37;
+            margin-bottom: 50px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: rgba(26, 26, 26, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            border-color: #D4AF37;
+        }
+
+        .benefit-card h3 {
+            color: #D4AF37;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card p {
+            color: #c0c0c0;
+            font-size: 1.1rem;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .form-section h2 {
+            font-size: 2.5rem;
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+
+        .form-section p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin-bottom: 40px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 18px 20px;
+            font-size: 1.1rem;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            background: rgba(26, 26, 26, 0.8);
+            color: #ffffff;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #D4AF37;
+        }
+
+        input::placeholder {
+            color: #888;
+        }
+
+        .cta-button {
+            width: 100%;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #D4AF37 0%, #C5A028 100%);
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Social Proof */
+        .social-proof {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .social-proof h3 {
+            font-size: 1.3rem;
+            color: #888;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            opacity: 0.6;
+        }
+
+        .logos span {
+            font-size: 1.5rem;
+            color: #D4AF37;
+            font-weight: 700;
+            padding: 10px 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            color: #888;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subheadline {
+                font-size: 1.2rem;
+            }
+
+            .benefits h2,
+            .form-section h2 {
+                font-size: 2rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://assets.cdn.filesafe.space/MOSdvO66DV7lXeYzIv7b/media/64d94fe8977d400155652998.png" alt="Union Station Shoe Shine" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Event Engagement Booster Blueprint</h1>
+                <p class="subheadline">Discover why Fortune 500 planners book our luxury shoe-shine activations to increase booth traffic by 2–3x</p>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="container">
+                <div class="video-placeholder">
+                    <p>60-Second Power Content Video Coming Soon</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <div class="container">
+                <h3>Trusted by Leading Event Planners</h3>
+                <div class="logos">
+                    <span>Corporate Events</span>
+                    <span>Trade Shows</span>
+                    <span>Conventions</span>
+                    <span>Premium Weddings</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Inside This Free Blueprint</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>7 Proven Activations</h3>
+                        <p>Discover the exact activations that keep attendees engaged and increase booth traffic by 2-3x.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Setup Strategies</h3>
+                        <p>Learn how to position your activation for maximum visibility and attendee participation.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>ROI Maximization</h3>
+                        <p>Get insights on tracking engagement metrics and proving ROI to stakeholders.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Industry Case Studies</h3>
+                        <p>Real examples from Fortune 500 events showing measurable engagement increases.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Vendor Selection Guide</h3>
+                        <p>Know exactly what to look for when choosing activation vendors for your next event.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Instant Download</h3>
+                        <p>Get immediate access to the PDF blueprint delivered straight to your inbox.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <h2>Get Your Free Blueprint Now</h2>
+                <p>Enter your details below for instant access</p>
+                <form id="leadForm">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <button type="submit" class="cta-button">Get the Blueprint</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Union Station Shoe Shine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const email = document.getElementById('email').value;
+            
+            const button = document.querySelector('.cta-button');
+            button.textContent = 'Submitting...';
+            button.disabled = true;
+            
+            try {
+                const response = await fetch('/api/submit-lead', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        firstName: firstName,
+                        email: email,
+                        source: 'event-engagement-blueprint'
+                    })
+                });
+                
+                if (response.ok) {
+                    window.location.href = '/thank-you.html';
+                } else {
+                    alert('There was an error submitting your information. Please try again.');
+                    button.textContent = 'Get the Blueprint';
+                    button.disabled = false;
+                }
+            } catch (error) {
+                alert('There was an error submitting your information. Please try again.');
+                button.textContent = 'Get the Blueprint';
+                button.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
