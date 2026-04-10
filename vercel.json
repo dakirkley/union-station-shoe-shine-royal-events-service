@@ -1,7 +1,9 @@
 {
   "functions": {
     "api/**/*.js": {
-      "runtime": "@vercel/node@2.15.10"
+      "runtime": "@vercel/node"
     }
-  }
+  },
+  "buildCommand": null,
+  "devCommand": null
 }
